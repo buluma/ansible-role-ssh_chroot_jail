@@ -1,4 +1,35 @@
 ---
+# Prepare
+- name: update apt cache.
+  ansible.builtin.apt: update_cache=true cache_valid_time=600
+  when: ansible_os_family == 'Debian'
+
+- name: Ensure build dependencies are installed.
+  ansible.builtin.package:
+    name:
+      - ed
+      - nano
+      - vim
+      - coreutils
+    state: present
+
+- name: ensure build dependencies are installed (RedHat).
+  ansible.builtin.package:
+    name:
+      - openssh-server
+      - openssh-clients
+    state: present
+  when: ansible_os_family == 'RedHat'
+
+- name: ensure build dependencies are installed (Debian).
+  ansible.builtin.apt:
+    name:
+      - openssh-server
+      - openssh-client
+    state: present
+  when: ansible_os_family == 'Debian'
+
+# main tasks
 - name: include OS-specific variables.
   ansible.builtin.include_vars: "{{ ansible_os_family }}.yml"
 
