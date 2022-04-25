@@ -159,9 +159,13 @@ This role has been tested on these [container images](https://hub.docker.com/u/b
 
 |container|tags|
 |---------|----|
-|el|7|
+|el|all|
 |debian|all|
 |ubuntu|all|
+|fedora|all|
+|alpine|all|
+|amazon|all|
+|opensuse|all|
 
 The minimum version of Ansible required is 2.1, tests have been done to:
 
