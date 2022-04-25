@@ -33,7 +33,7 @@
 - name: include OS-specific variables.
   ansible.builtin.include_vars: "{{ ansible_os_family }}.yml"
 
-- name: Ensure jail directories exist.
+- name: ensure jail directories exist.
   ansible.builtin.file:  # noqa 208
     path: "{{ ssh_chroot_jail_path }}/{{ item }}"
     state: directory

@@ -22,38 +22,20 @@ This example is taken from `molecule/default/converge.yml` and is tested on each
         home: /home/foo
         shell: /bin/bash
 
-  pre_tasks:
-    - name: update apt cache.
-      apt: update_cache=true cache_valid_time=600
-      when: ansible_os_family == 'Debian'
-
-    - name: Ensure build dependencies are installed.
-      ansible.builtin.package:
-        name:
-          - ed
-          - nano
-          - vim
-          - coreutils
-        state: present
-
-    - name: ensure build dependencies are installed (RedHat).
-      ansible.builtin.package:
-        name:
-          - openssh-server
-          - openssh-clients
-        state: present
-      when: ansible_os_family == 'RedHat'
-
-    - name: ensure build dependencies are installed (Debian).
-      ansible.builtin.apt:
-        name:
-          - openssh-server
-          - openssh-client
-        state: present
-      when: ansible_os_family == 'Debian'
-
   roles:
     - role: buluma.ssh_chroot_jail
+```
+
+The machine needs to be prepared. In CI this is done using `molecule/default/prepare.yml`:
+```yaml
+---
+- name: prepare
+  hosts: all
+  become: yes
+  gather_facts: no
+
+  roles:
+    - role: buluma.bootstrap
 ```
 
 
@@ -155,6 +137,13 @@ ssh_chroot_jail_dirs_recurse: true
 
 - pip packages listed in [requirements.txt](https://github.com/buluma/ansible-role-ssh_chroot_jail/blob/main/requirements.txt).
 
+## [Status of used roles](#status-of-requirements)
+
+The following roles are used to prepare a system. You can prepare your system in another way.
+
+| Requirement | GitHub | GitLab |
+|-------------|--------|--------|
+|[buluma.bootstrap](https://galaxy.ansible.com/buluma/bootstrap)|[![Build Status GitHub](https://github.com/buluma/ansible-role-bootstrap/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-bootstrap/actions)|[![Build Status GitLab ](https://gitlab.com/buluma/ansible-role-bootstrap/badges/master/pipeline.svg)](https://gitlab.com/buluma/ansible-role-bootstrap)|
 
 ## [Context](#context)
 
@@ -170,7 +159,7 @@ This role has been tested on these [container images](https://hub.docker.com/u/b
 
 |container|tags|
 |---------|----|
-|el|all|
+|el|7|
 |debian|all|
 |ubuntu|all|
 

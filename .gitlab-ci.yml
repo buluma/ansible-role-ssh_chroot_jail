@@ -1,4 +1,4 @@
----
+``---
 image: "buluma/github-action-molecule:4.0.6"
 
 services:
@@ -23,8 +23,6 @@ molecule:
     matrix:
       - image: "enterpriselinux"
         tag: "7"
-      - image: "enterpriselinux"
-        tag: "latest"
       - image: "debian-systemd"
         tag: "latest"
       - image: "debian-systemd"
@@ -77,8 +75,6 @@ role_testing:
     matrix:
       - image: "enterpriselinux"
         tag: "7"
-      - image: "enterpriselinux"
-        tag: "latest"
       - image: "debian-systemd"
         tag: "latest"
       - image: "debian-systemd"
