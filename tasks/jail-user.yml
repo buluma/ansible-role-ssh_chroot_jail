@@ -20,7 +20,7 @@
   when: item.home is defined
 
 - name: ensure account skeleton files are copied into jailed user's home.
-  command: "cp -r -n /etc/skel/. {{ ssh_chroot_jail_path }}{{ item.home }}"
+  ansible.builtin.command: "cp -r -n /etc/skel/. {{ ssh_chroot_jail_path }}{{ item.home }}"
   args:
     warn: false
   become: true
