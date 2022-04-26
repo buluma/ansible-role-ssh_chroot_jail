@@ -12,7 +12,7 @@ galaxy_info:
   platforms:
     - name: EL
       versions:
-        - all
+        - "7"
     - name: Debian
       versions:
         - all
@@ -20,12 +20,6 @@ galaxy_info:
       versions:
         - all
     - name: Fedora
-      versions:
-        - all
-    - name: Alpine
-      versions:
-        - all
-    - name: Amazon
       versions:
         - all
     - name: OpenSUSE

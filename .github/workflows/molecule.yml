@@ -54,8 +54,6 @@ jobs:
             tag: "34"
           - image: "fedora-systemd"
             tag: "latest"
-          - image: "alpine-openrc"
-            tag: "latest"
           - image: "amazonlinux"
             tag: "1"
           - image: "amazonlinux"

@@ -163,7 +163,6 @@ This role has been tested on these [container images](https://hub.docker.com/u/b
 |debian|all|
 |ubuntu|all|
 |fedora|all|
-|alpine|all|
 |amazon|all|
 |opensuse|all|
 
