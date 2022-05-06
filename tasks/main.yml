@@ -1,5 +1,10 @@
 ---
 # Prepare
+- name: import assert.yml
+  ansible.builtin.import_tasks: assert.yml
+  run_once: yes
+  delegate_to: localhost
+
 - name: update apt cache.
   ansible.builtin.apt: update_cache=true cache_valid_time=600
   when: ansible_os_family == 'Debian'

@@ -11,5 +11,5 @@ exclude_paths:
   - ./.tox
   - ./.cache
 
-skip_list:
-  - role-name
+# skip_list:
+#   - role-name
