@@ -23,8 +23,6 @@ molecule:
     matrix:
       - image: "enterpriselinux"
         tag: "7"
-      - image: "enterpriselinux"
-        tag: "latest"
       - image: "debian-systemd"
         tag: "latest"
       - image: "debian-systemd"
@@ -35,6 +33,16 @@ molecule:
         tag: "bionic"
       - image: "docker-ubuntu-systemd"
         tag: "focal"
+      - image: "fedora-systemd"
+        tag: "34"
+      - image: "fedora-systemd"
+        tag: "latest"
+      - image: "amazonlinux"
+        tag: "1"
+      - image: "amazonlinux"
+        tag: "latest"
+      - image: "docker-opensuse-systemd"
+        tag: "latest"
 
 testing:
   stage: test
@@ -48,8 +56,6 @@ testing:
     matrix:
       - image: "enterpriselinux"
         tag: "7"
-      - image: "enterpriselinux"
-        tag: "latest"
       - image: "debian-systemd"
         tag: "latest"
       - image: "debian-systemd"
@@ -60,6 +66,16 @@ testing:
         tag: "bionic"
       - image: "docker-ubuntu-systemd"
         tag: "focal"
+      - image: "fedora-systemd"
+        tag: "34"
+      - image: "fedora-systemd"
+        tag: "latest"
+      - image: "amazonlinux"
+        tag: "1"
+      - image: "amazonlinux"
+        tag: "latest"
+      - image: "docker-opensuse-systemd"
+        tag: "latest"
 
 galaxy:
   stage: deploy
@@ -89,6 +105,16 @@ role_testing:
         tag: "bionic"
       - image: "docker-ubuntu-systemd"
         tag: "focal"
+      - image: "fedora-systemd"
+        tag: "34"
+      - image: "fedora-systemd"
+        tag: "latest"
+      - image: "amazonlinux"
+        tag: "1"
+      - image: "amazonlinux"
+        tag: "latest"
+      - image: "docker-opensuse-systemd"
+        tag: "latest"
 
 release_job:
   stage: .post

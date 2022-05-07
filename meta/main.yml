@@ -12,11 +12,17 @@ galaxy_info:
   platforms:
     - name: EL
       versions:
-        - all
+        - "7"
     - name: Debian
       versions:
         - all
     - name: Ubuntu
+      versions:
+        - all
+    - name: Fedora
+      versions:
+        - all
+    - name: OpenSUSE
       versions:
         - all
   galaxy_tags:
