@@ -23,8 +23,6 @@ molecule:
     matrix:
       - image: "enterpriselinux"
         tag: "7"
-      - image: "enterpriselinux"
-        tag: "latest"
       - image: "debian-systemd"
         tag: "latest"
       - image: "debian-systemd"
@@ -58,8 +56,6 @@ testing:
     matrix:
       - image: "enterpriselinux"
         tag: "7"
-      - image: "enterpriselinux"
-        tag: "latest"
       - image: "debian-systemd"
         tag: "latest"
       - image: "debian-systemd"
