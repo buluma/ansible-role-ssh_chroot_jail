@@ -4,7 +4,7 @@ Simple SSH chroot jail management.
 
 |GitHub|GitLab|Quality|Downloads|Version|Issues|Pull Requests|
 |------|------|-------|---------|-------|------|-------------|
-|[![github](https://github.com/buluma/ansible-role-ssh_chroot_jail/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-ssh_chroot_jail/actions)|[![gitlab](https://gitlab.com/buluma/ansible-role-ssh_chroot_jail/badges/master/pipeline.svg)](https://gitlab.com/buluma/ansible-role-ssh_chroot_jail)|[![quality](https://img.shields.io/ansible/quality/)](https://galaxy.ansible.com/buluma/ssh_chroot_jail)|[![downloads](https://img.shields.io/ansible/role/d/)](https://galaxy.ansible.com/buluma/ssh_chroot_jail)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-ssh_chroot_jail.svg)](https://github.com/buluma/ansible-role-ssh_chroot_jail/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-ssh_chroot_jail.svg)](https://github.com/buluma/ansible-role-ssh_chroot_jail/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-ssh_chroot_jail.svg)](https://github.com/buluma/ansible-role-ssh_chroot_jail/pulls/)|
+|[![github](https://github.com/buluma/ansible-role-ssh_chroot_jail/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-ssh_chroot_jail/actions)|[![gitlab](https://gitlab.com/buluma/ansible-role-ssh_chroot_jail/badges/master/pipeline.svg)](https://gitlab.com/buluma/ansible-role-ssh_chroot_jail)|[![quality](https://img.shields.io/ansible/quality/58950)](https://galaxy.ansible.com/buluma/ssh_chroot_jail)|[![downloads](https://img.shields.io/ansible/role/d/58950)](https://galaxy.ansible.com/buluma/ssh_chroot_jail)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-ssh_chroot_jail.svg)](https://github.com/buluma/ansible-role-ssh_chroot_jail/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-ssh_chroot_jail.svg)](https://github.com/buluma/ansible-role-ssh_chroot_jail/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-ssh_chroot_jail.svg)](https://github.com/buluma/ansible-role-ssh_chroot_jail/pulls/)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -143,7 +143,7 @@ The following roles are used to prepare a system. You can prepare your system in
 
 | Requirement | GitHub | GitLab |
 |-------------|--------|--------|
-|[buluma.bootstrap](https://galaxy.ansible.com/buluma/bootstrap)|[![Build Status GitHub](https://github.com/buluma/ansible-role-bootstrap/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-bootstrap/actions)|[![Build Status GitLab ](https://gitlab.com/buluma/ansible-role-bootstrap/badges/master/pipeline.svg)](https://gitlab.com/buluma/ansible-role-bootstrap)|
+|[buluma.bootstrap](https://galaxy.ansible.com/buluma/bootstrap)|[![Build Status GitHub](https://github.com/buluma/ansible-role-bootstrap/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-bootstrap/actions)|[![Build Status GitLab ](https://gitlab.com/buluma/ansible-role-bootstrap/badges/main/pipeline.svg)](https://gitlab.com/buluma/ansible-role-bootstrap)|
 
 ## [Context](#context)
 
