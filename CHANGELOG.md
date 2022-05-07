@@ -2,11 +2,16 @@
 
 ## [Unreleased](https://github.com/buluma/ansible-role-ssh_chroot_jail/tree/HEAD)
 
-[Full Changelog](https://github.com/buluma/ansible-role-ssh_chroot_jail/compare/0.1.0...HEAD)
+[Full Changelog](https://github.com/buluma/ansible-role-ssh_chroot_jail/compare/0.1.1...HEAD)
 
 **Merged pull requests:**
 
+- Develop [\#4](https://github.com/buluma/ansible-role-ssh_chroot_jail/pull/4) ([buluma](https://github.com/buluma))
 - Testing [\#3](https://github.com/buluma/ansible-role-ssh_chroot_jail/pull/3) ([buluma](https://github.com/buluma))
+
+## [0.1.1](https://github.com/buluma/ansible-role-ssh_chroot_jail/tree/0.1.1) (2022-05-07)
+
+[Full Changelog](https://github.com/buluma/ansible-role-ssh_chroot_jail/compare/0.1.0...0.1.1)
 
 ## [0.1.0](https://github.com/buluma/ansible-role-ssh_chroot_jail/tree/0.1.0) (2022-04-25)
 
