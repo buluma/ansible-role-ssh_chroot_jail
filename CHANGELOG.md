@@ -4,6 +4,10 @@
 
 [Full Changelog](https://github.com/buluma/ansible-role-ssh_chroot_jail/compare/0.1.1...HEAD)
 
+**Closed issues:**
+
+- Add to tracker [\#5](https://github.com/buluma/ansible-role-ssh_chroot_jail/issues/5)
+
 **Merged pull requests:**
 
 - Develop [\#4](https://github.com/buluma/ansible-role-ssh_chroot_jail/pull/4) ([buluma](https://github.com/buluma))
