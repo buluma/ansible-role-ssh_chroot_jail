@@ -4,8 +4,13 @@
 
 [Full Changelog](https://github.com/buluma/ansible-role-ssh_chroot_jail/compare/0.1.1...HEAD)
 
+**Closed issues:**
+
+- Add to tracker [\#5](https://github.com/buluma/ansible-role-ssh_chroot_jail/issues/5)
+
 **Merged pull requests:**
 
+- Bump buluma/molecule-action from 4.0.6 to 4.0.7 [\#6](https://github.com/buluma/ansible-role-ssh_chroot_jail/pull/6) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Develop [\#4](https://github.com/buluma/ansible-role-ssh_chroot_jail/pull/4) ([buluma](https://github.com/buluma))
 - Testing [\#3](https://github.com/buluma/ansible-role-ssh_chroot_jail/pull/3) ([buluma](https://github.com/buluma))
 
