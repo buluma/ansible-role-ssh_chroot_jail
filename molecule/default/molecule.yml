@@ -14,11 +14,11 @@ lint: |
 driver:
   name: docker
 platforms:
-  - name: "sshchrootjail-${image:-docker-centos7-ansible}-${tag:-latest}${TOX_ENVNAME}"
-    image: "${namespace:-buluma}/${image:-docker-centos7-ansible}:${tag:-latest}"
+  - name: "sshchrootjail-${image:-fedora}-${tag:-latest}${TOX_ENVNAME}"
+    image: "${namespace:-buluma}/${image:-fedora}:${tag:-latest}"
     command: /sbin/init
     volumes:
-      - /sys/fs/cgroup:/sys/fs/cgroup:ro
+      - /sys/fs/cgroup:/sys/fs/cgroup:rw
     privileged: yes
     pre_build_image: yes
 provisioner:

@@ -1,5 +1,5 @@
 ---
-- name: ensure jailed user exists.
+- name: jail-user | Ensure jailed user exists.
   ansible.builtin.user:
     name: "{{ item.name }}"
     password: "{{ item.password | default(omit) }}"
@@ -10,7 +10,7 @@
     createhome: "{{ item.createhome | default(omit) }}"
   register: user_task
 
-- name: ensure jailed user has a homedir inside the jail (if configured).
+- name: jail-user | Ensure jailed user has a homedir inside the jail (if configured).
   ansible.builtin.file:
     path: "{{ ssh_chroot_jail_path }}{{ item.home }}"
     state: directory
@@ -19,7 +19,7 @@
     mode: 0755
   when: item.home is defined
 
-- name: ensure account skeleton files are copied into jailed user's home.
+- name: jail-user | Ensure account skeleton files are copied into jailed user's home.
   ansible.builtin.command: "cp -r -n /etc/skel/. {{ ssh_chroot_jail_path }}{{ item.home }}"
   args:
     warn: false
