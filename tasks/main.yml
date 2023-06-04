@@ -72,9 +72,9 @@
     mode: "{{ item.mode | default('0755') }}"
   with_items: "{{ ssh_chroot_bins }}"
   notify:
-    - copy ssh-chroot-jail extra items
-    - add binary libs via l2chroot
-    - copy extra libraries for whoami
+    - Copy ssh-chroot-jail extra items
+    - Add binary libs via l2chroot
+    - Copy extra libraries for whoami
 
 - name: Ensure an ssh jail group exists.
   ansible.builtin.group:
@@ -86,7 +86,7 @@
     path: /etc/ssh/sshd_config
     block: "{{ ssh_chroot_sshd_chroot_jail_config }}"
     insertafter: EOF
-  notify: restart ssh daemon
+  notify: Restart ssh daemon
 
 - name: Import Jail-User
   ansible.builtin.import_tasks: jail-user.yml
