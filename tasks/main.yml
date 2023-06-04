@@ -89,5 +89,5 @@
   notify: Restart ssh daemon
 
 - name: Import Jail-User
-  ansible.builtin.import_tasks: jail-user.yml
+  ansible.builtin.include_tasks: jail-user.yml
   with_items: "{{ ssh_chroot_jail_users }}"
