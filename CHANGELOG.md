@@ -6,6 +6,8 @@
 
 **Closed issues:**
 
+- Update buluma/todo-to-issue-action@v1.0.1 @buluma [\#14](https://github.com/buluma/ansible-role-ssh_chroot_jail/issues/14)
+- Update action [\#13](https://github.com/buluma/ansible-role-ssh_chroot_jail/issues/13)
 - Add to tracker [\#5](https://github.com/buluma/ansible-role-ssh_chroot_jail/issues/5)
 
 **Merged pull requests:**
