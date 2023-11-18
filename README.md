@@ -1,4 +1,4 @@
-# [ssh_chroot_jail](#ssh_chroot_jail)
+# [Ansible role ssh_chroot_jail](#ssh_chroot_jail)
 
 Simple SSH chroot jail management.
 
