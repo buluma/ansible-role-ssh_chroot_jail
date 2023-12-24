@@ -1,10 +1,10 @@
-# [Ansible role ssh_chroot_jail](#ssh_chroot_jail)
+# Ansible role [ssh_chroot_jail](https://galaxy.ansible.com/ui/standalone/roles/buluma/ssh_chroot_jail/documentation)
 
 Simple SSH chroot jail management.
 
-|GitHub|Version|Issues|Pull Requests|
-|------|-------|------|-------------|
-|[![github](https://github.com/buluma/ansible-role-ssh_chroot_jail/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-ssh_chroot_jail/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-ssh_chroot_jail.svg)](https://github.com/buluma/ansible-role-ssh_chroot_jail/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-ssh_chroot_jail.svg)](https://github.com/buluma/ansible-role-ssh_chroot_jail/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-ssh_chroot_jail.svg)](https://github.com/buluma/ansible-role-ssh_chroot_jail/pulls/)|
+|GitHub|Version|Issues|Pull Requests|Downloads|
+|------|-------|------|-------------|---------|
+|[![github](https://github.com/buluma/ansible-role-ssh_chroot_jail/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-ssh_chroot_jail/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-ssh_chroot_jail.svg)](https://github.com/buluma/ansible-role-ssh_chroot_jail/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-ssh_chroot_jail.svg)](https://github.com/buluma/ansible-role-ssh_chroot_jail/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-ssh_chroot_jail.svg)](https://github.com/buluma/ansible-role-ssh_chroot_jail/pulls/)|[![Ansible Role](https://img.shields.io/ansible/role/d/buluma/ssh_chroot_jail)](https://galaxy.ansible.com/ui/standalone/roles/buluma/ssh_chroot_jail/documentation)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -186,9 +186,7 @@ If you find issues, please register them in [GitHub](https://github.com/buluma/a
 
 ## [Author Information](#author-information)
 
-[buluma](https://buluma.github.io/)
+[Shadow Walker](https://buluma.github.io/)
 
-
-### [Special Thanks](#special-thanks)
 
 Template inspired by [Robert de Bock](https://github.com/robertdebock)
