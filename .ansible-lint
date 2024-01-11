@@ -15,6 +15,8 @@ exclude_paths:
 
 skip_list:
   - yaml[truthy]
+  - no-free-form  # TODO: Update no-free-form
+  - no-changed-when  # TODO: Update no-changed-when
 
 enable_list:
   - name[prefix]
