@@ -1,0 +1,9 @@
+digraph PhiloDilemma {
+  label = "Michael Buluma" ;
+  overlap=false
+  {
+    "ssh_chroot_jail" [fillcolor=yellow style=filled penwidth=3]
+    "buluma.bootstrap" [fillcolor=green style=filled]
+  }
+  "ssh_chroot_jail" -> "buluma.bootstrap"
+}
