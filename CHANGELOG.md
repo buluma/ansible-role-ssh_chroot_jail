@@ -6,6 +6,7 @@
 
 **Merged pull requests:**
 
+- Bump release-drafter/release-drafter from 5 to 6 [\#21](https://github.com/buluma/ansible-role-ssh_chroot_jail/pull/21) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump release-drafter/release-drafter from 5 to 6 [\#20](https://github.com/buluma/ansible-role-ssh_chroot_jail/pull/20) ([dependabot[bot]](https://github.com/apps/dependabot))
 
 ## [0.3.0](https://github.com/buluma/ansible-role-ssh_chroot_jail/tree/0.3.0) (2024-01-20)
@@ -29,7 +30,6 @@
 
 **Merged pull requests:**
 
-- Bump release-drafter/release-drafter from 5 to 6 [\#21](https://github.com/buluma/ansible-role-ssh_chroot_jail/pull/21) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump buluma/gitlab-mirror-ci-action from 1.0.6 to 1.0.7 [\#12](https://github.com/buluma/ansible-role-ssh_chroot_jail/pull/12) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump buluma/molecule-action from 4.0.6 to 4.0.7 [\#6](https://github.com/buluma/ansible-role-ssh_chroot_jail/pull/6) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Develop [\#4](https://github.com/buluma/ansible-role-ssh_chroot_jail/pull/4) ([buluma](https://github.com/buluma))
