@@ -2,11 +2,13 @@
 # Prepare
 - name: Import assert.yml
   ansible.builtin.import_tasks: assert.yml
-  run_once: yes
+  run_once: true
   delegate_to: localhost
 
 - name: Update apt cache.
-  ansible.builtin.apt: update_cache=true cache_valid_time=600
+  ansible.builtin.apt:
+    update_cache: true
+    cache_valid_time: 600
   when: ansible_os_family == 'Debian'
 
 - name: Ensure build dependencies are installed.
@@ -39,7 +41,7 @@
   ansible.builtin.include_vars: "{{ ansible_os_family }}.yml"
 
 - name: Ensure jail directories exist.
-  ansible.builtin.file:  # noqa 208
+  ansible.builtin.file:  # noqa risky-file-permissions
     path: "{{ ssh_chroot_jail_path }}/{{ item }}"
     state: directory
     recurse: "{{ ssh_chroot_jail_dirs_recurse }}"
@@ -55,14 +57,14 @@
   ansible.builtin.template:
     src: ssh-chroot.conf.j2
     dest: "{{ ssh_chroot_tmpfiles_conf_path }}"
-    mode: 0644
+    mode: '0644'
   when: "ansible_service_mgr == 'systemd'"
 
 - name: Ensure l2chroot is installed.
   ansible.builtin.template:
     src: "{{ ssh_chroot_l2chroot_template }}"
     dest: "{{ ssh_chroot_l2chroot_path }}"
-    mode: 0755
+    mode: '0755'
 
 - name: Ensure binaries are copied into the jail.
   ansible.builtin.copy:
