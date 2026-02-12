@@ -11,4 +11,4 @@
         shell: /bin/bash
 
   roles:
-    - role: ansible-role-ssh_chroot_jail
+    - role: buluma.ssh_chroot_jail
