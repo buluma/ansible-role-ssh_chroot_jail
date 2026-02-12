@@ -5,4 +5,4 @@
 repository:
   description: Simple SSH chroot jail management.
   homepage: https://buluma.github.io/
-  topics: system, security, chroot, ssh, jail, lockdown, access, ansible, molecule, tox, playbook
+  topics: system, security, chroot, ssh, jail, lockdown, access, ansible, molecule, playbook
