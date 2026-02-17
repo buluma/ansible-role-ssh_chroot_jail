@@ -4,6 +4,11 @@
 
 [Full Changelog](https://github.com/buluma/ansible-role-ssh_chroot_jail/compare/0.3.0...HEAD)
 
+**Closed issues:**
+
+- Update action [\#16](https://github.com/buluma/ansible-role-ssh_chroot_jail/issues/16)
+- rebuild action [\#15](https://github.com/buluma/ansible-role-ssh_chroot_jail/issues/15)
+
 **Merged pull requests:**
 
 - Bump release-drafter/release-drafter from 5 to 6 [\#21](https://github.com/buluma/ansible-role-ssh_chroot_jail/pull/21) ([dependabot[bot]](https://github.com/apps/dependabot))
