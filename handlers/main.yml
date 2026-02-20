@@ -5,11 +5,11 @@
     state: restarted
 
 - name: Copy ssh-chroot-jail extra items
-  ansible.builtin.copy:  # noqa risky-file-permissions
+  ansible.builtin.copy: # noqa risky-file-permissions
     src: "{{ item }}"
     dest: "{{ ssh_chroot_jail_path }}{{ item }}"
     remote_src: true
-    mode: '0644'
+    mode: "0644"
   with_items: "{{ ssh_chroot_copy_extra_items }}"
 
 - name: Add binary libs via l2chroot

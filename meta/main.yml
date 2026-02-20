@@ -2,10 +2,10 @@
 galaxy_info:
   author: buluma
   role_name: ssh_chroot_jail
-  description: 'Simple SSH chroot jail management.'
+  description: "Simple SSH chroot jail management."
   license: Apache-2.0
   company: ShadowNet
-  min_ansible_version: '2.12
+  min_ansible_version: "2.12"
   platforms:
     - name: Debian
       versions:

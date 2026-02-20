@@ -1,5 +1,4 @@
 ---
-
 - name: assert | Test if ssh_chroot_jail_path is set correctly
   ansible.builtin.assert:
     that:

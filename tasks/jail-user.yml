@@ -16,11 +16,11 @@
     state: directory
     owner: "{{ item.name }}"
     group: "{{ item.name }}"
-    mode: '0755'
+    mode: "0755"
   when: item.home is defined
 
 - name: jail-user | Ensure account skeleton files are copied into jailed user's home.
-  ansible.builtin.shell: "cp -r -n /etc/skel/. {{ ssh_chroot_jail_path }}{{ item.home }}"
+  ansible.builtin.command: "cp -r -n /etc/skel/. {{ ssh_chroot_jail_path }}{{ item.home }}"
   args:
     warn: false
   become: true
