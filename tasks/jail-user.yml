@@ -20,13 +20,19 @@
   when: item.home is defined
 
 - name: jail-user | Ensure account skeleton files are copied into jailed user's home.
-  ansible.builtin.command: "cp -r -n /etc/skel/. {{ ssh_chroot_jail_path }}{{ item.home }}"
+  ansible.builtin.command:
+    argv:
+      - cp
+      - -r
+      - -n
+      - /etc/skel/.
+      - "{{ ssh_chroot_jail_path }}{{ item.home }}"
   args:
-    warn: false
+    creates: "{{ ssh_chroot_jail_path }}{{ item.home }}/.profile"
   become: true
   become_user: "{{ item.name }}"
   failed_when: false
   when:
     - item.home is defined
     - user_task.changed
-  changed_when: false
+  changed_when: user_task.changed
