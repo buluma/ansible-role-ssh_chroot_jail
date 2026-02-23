@@ -12,32 +12,32 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
 
 ```yaml
 ---
-- name: Converge
-  hosts: all
-  become: true
+  - name: Converge
+    hosts: all
+    become: true
 
-  vars:
-    ssh_chroot_l2chroot_path: /usr/bin/l2chroot
-    ssh_chroot_jail_users:
-      - name: foo
-        home: /home/foo
-        shell: /bin/bash
+    vars:
+      ssh_chroot_l2chroot_path: /usr/bin/l2chroot
+      ssh_chroot_jail_users:
+        - name: foo
+          home: /home/foo
+          shell: /bin/bash
 
-  roles:
-    - role: buluma.ssh_chroot_jail
+    roles:
+      - role: buluma.ssh_chroot_jail
 ```
 
 The machine needs to be prepared. In CI this is done using [`molecule/default/prepare.yml`](https://github.com/buluma/ansible-role-ssh_chroot_jail/blob/master/molecule/default/prepare.yml):
 
 ```yaml
 ---
-- name: Prepare
-  hosts: all
-  become: yes
-  gather_facts: no
+  - name: Prepare
+    hosts: all
+    become: yes
+    gather_facts: no
 
-  roles:
-    - role: buluma.bootstrap
+    roles:
+      - role: buluma.bootstrap
 ```
 
 Also see a [full explanation and example](https://buluma.github.io/how-to-use-these-roles.html) on how to use these roles.
@@ -70,10 +70,10 @@ ssh_chroot_jail_dirs:
 # p = FIFO device
 # anything else may result in errors with mknod or systemd-tmpfiles
 ssh_chroot_jail_devs:
-  - { dev: "null", major: "1", minor: "3" }
-  - { dev: "random", major: "5", minor: "0" }
-  - { dev: "urandom", major: "1", minor: "5" }
-  - { dev: "zero", major: "1", minor: "8" }
+  - {dev: "null", major: "1", minor: "3"}
+  - {dev: "random", major: "5", minor: "0"}
+  - {dev: "urandom", major: "1", minor: "5"}
+  - {dev: "zero", major: "1", minor: "8"}
 
 ssh_chroot_tmpfiles_conf_path: /etc/tmpfiles.d/ssh-chroot.conf
 
