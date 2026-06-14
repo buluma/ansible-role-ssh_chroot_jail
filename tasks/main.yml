@@ -9,7 +9,7 @@
   ansible.builtin.apt:
     update_cache: true
     cache_valid_time: 600
-  when: ansible_facts.os_family == 'Debian'
+  when: ansible_facts['os_family'] == 'Debian'
 
 - name: Ensure build dependencies are installed.
   ansible.builtin.package:
@@ -26,7 +26,7 @@
       - openssh-server
       - openssh-clients
     state: present
-  when: ansible_facts.os_family == 'RedHat'
+  when: ansible_facts['os_family'] == 'RedHat'
 
 - name: Ensure build dependencies are installed (Debian).
   ansible.builtin.apt:
@@ -34,11 +34,11 @@
       - openssh-server
       - openssh-client
     state: present
-  when: ansible_facts.os_family == 'Debian'
+  when: ansible_facts['os_family'] == 'Debian'
 
 # main tasks
 - name: Include os-specific variables.
-  ansible.builtin.include_vars: "{{ ansible_facts.os_family }}.yml"
+  ansible.builtin.include_vars: "{{ ansible_facts['os_family'] }}.yml"
 
 - name: Ensure jail directories exist.
   ansible.builtin.file: # noqa risky-file-permissions
@@ -58,7 +58,7 @@
     src: ssh-chroot.conf.j2
     dest: "{{ ssh_chroot_tmpfiles_conf_path }}"
     mode: "0644"
-  when: "ansible_facts.service_mgr == 'systemd'"
+  when: "ansible_facts['service_mgr'] == 'systemd'"
 
 - name: Ensure l2chroot is installed.
   ansible.builtin.template:
