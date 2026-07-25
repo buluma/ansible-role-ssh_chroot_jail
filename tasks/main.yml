@@ -17,7 +17,6 @@
       - ed
       - nano
       - vim
-      - coreutils
     state: present
 
 - name: Ensure build dependencies are installed (RedHat).
@@ -27,6 +26,19 @@
       - openssh-clients
     state: present
   when: ansible_facts['os_family'] == 'RedHat'
+
+- name: Ensure coreutils is installed (RedHat).
+  ansible.builtin.dnf:
+    name: coreutils
+    state: latest # noqa package-latest
+    allowerasing: true
+  when: ansible_facts['os_family'] == 'RedHat'
+
+- name: Ensure coreutils is installed (Debian).
+  ansible.builtin.apt:
+    name: coreutils
+    state: present
+  when: ansible_facts['os_family'] == 'Debian'
 
 - name: Ensure build dependencies are installed (Debian).
   ansible.builtin.apt:
