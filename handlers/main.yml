@@ -19,6 +19,6 @@
   changed_when: false
 
 - name: Copy extra libraries for whoami
-  ansible.builtin.shell: "cp {{ lib64_path }}/libns* {{ ssh_chroot_jail_path }}/{{ lib64_path }}/"
+  ansible.builtin.shell: "mkdir -p {{ ssh_chroot_jail_path }}/{{ lib64_path }}/ && cp {{ lib64_path }}/libns* {{ ssh_chroot_jail_path }}/{{ lib64_path }}/"
   when: "'/usr/bin/whoami' in ssh_chroot_bins"
   changed_when: false
